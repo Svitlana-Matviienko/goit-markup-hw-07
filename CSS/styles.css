@@ -153,20 +153,121 @@ img {
         .about-list {
             display: flex;
             gap: 72px 24px;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            
         }
     }
 
+    @media screen and (min-width: 767px)
+    {
+        .about-item {
+            width: calc((100% - 24px) / 2);
+        }
+    }
 
-
-/* @media screen and (min-width: 1130px)
+@media screen and (min-width: 1130px)
 {
     .about-list {
         display: flex;
         gap: 24px;
         justify-content: space-between;
 }
-} */
+}
+
+
+
+
+
+/* Customers */
+
+.customers {
+    padding: 96px 0;
+    }
+
+    @media screen and (min-width: 1130px)
+    {
+        .customers {
+            padding: 120px 0;
+            }
+    }
+
+    .custom-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(40/36);
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--top-color);
+        margin-bottom: 72px;
+    }
+
+    .custom-items {
+        display: flex;
+        gap: 72px 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    @media screen and (min-width: 767px)
+    {
+        .custom-items {
+            gap: 72px 24px;
+        }
+    }
+
+    @media screen and (min-width: 1130px)
+    {
+        .custom-items {
+            gap: 0 24px;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .clients {
+        width: calc((100% - 20px) / 2);
+        fill: currentColor;
+
+    }
+
+    @media screen and (min-width: 767px)
+    {
+        .clients {
+            width: calc((100% - 52px) / 3);    
+        }
+    }
+
+
+    .partnes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 190px;
+        height: 88px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        color: #8E8F99;
+        transition-property: border-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubik-time);
+    }
+
+    .partnes:hover,
+    .partnes:focus {
+   border-color: var(--pressed-state);
+   color: var(--pressed-state);
+}
+
+    .logo-customers:hover,
+    .logo-customers:focus {
+    fill: var(--pressed-state);
+}
+
+.logo-customers {
+    fill: currentColor;
+}
 
     /* 
     @media screen and (min-width: 767px)
