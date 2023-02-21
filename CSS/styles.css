@@ -105,6 +105,20 @@ img {
     display: none;
 }
 
+@media screen and (min-width: 1130px)
+{
+    .bg-icon-about {
+        display: block;
+        background-color: #F4F4FD;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .about-studio {
     margin-bottom: 8px;
     font-weight: 700;
@@ -163,7 +177,10 @@ img {
         .about-item {
             width: calc((100% - 24px) / 2);
         }
-    }
+        .about-list {
+            flex-wrap: nowrap;
+            gap: 0 24px;
+    }}
 
 @media screen and (min-width: 1130px)
 {
