@@ -845,7 +845,102 @@ border: 0;
     margin-bottom: 72px;
     }}
 
+    /* TEAM */
 
+    .team-section {
+        background-color: var(--team-color);
+        padding: 96px 0;
+    }
+
+    @media screen and (min-width: 1200px){
+    .team-section {
+        padding: 120px 0;
+    }}
+
+    .team-title {font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--top-color);
+    margin-bottom: 72px;}
+
+    .team-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 72px;
+    }
+
+    @media screen and (min-width: 768px){
+.team-cards {
+    row-gap: 64px;
+    column-gap: 24px;
+}}
+
+@media screen and (min-width: 1200px){
+    .team-cards {
+        flex-wrap: nowrap;
+    }}
+
+    .work-cards {
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+
+    .team-item {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .team-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--top-color);
+        text-align: center;
+        margin-bottom: 8px;}
+
+   .team-position {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--paragraph-color);
+text-align: center;
+}
+
+.icons-team {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 16px;
+    margin-right: 16px;
+    margin-top: 8px;
+}
+
+.circle-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+.item-social {
+    border-radius: 50%;
+    background-color: var(--button-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubik-time);
+}
+
+.item-social:hover,
+.item-social:focus {
+    background-color: var(--pressed-state);
+}
 
 /* CUSTOMERS*/
 
