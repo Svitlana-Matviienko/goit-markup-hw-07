@@ -1061,6 +1061,10 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     padding-left: 108px;}
+
+    .social-media {
+        margin-left: 24px;
+    }
 }
 
 @media screen and (min-width: 1130px)
@@ -1068,10 +1072,17 @@ text-align: center;
         .footer-flex {
             display: flex;
             flex-wrap: nowrap;
-            }}
+            padding-left: 12px
+            }
+        
+    .social-media {
+                margin-left: 0;
+            }
+        }
 
     .footer-logo-text {
         margin-bottom: 72px;
+
     }
 
     @media screen and (min-width: 1130px)
@@ -1080,10 +1091,6 @@ text-align: center;
             margin-right: 120px;
             text-align: left;
         }}
-
-    .social-media {
-        margin-left: 24px;
-    }
 
 
 .logo-footer {
