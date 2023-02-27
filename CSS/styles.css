@@ -52,6 +52,7 @@ img {
 }
 
 .container {
+        min-width: 320px;
         max-width: 428px;
         padding-right: 15px;
         padding-left: 15px;
@@ -80,21 +81,21 @@ img {
     .header {
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px rgb(46 47 66 / 8%);
+        padding: 24px 0px;
     }
+
+    @media screen and (min-width: 768px){
+        .header {
+
+            padding: 2px;
+        }
+        }
 
 .main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
-
-@media screen and (min-width: 768px){
-.main-nav {
-    padding-top: 0;
-    padding-bottom: 0;
-}}
 
 @media screen and (min-width: 1200px){
 .main-nav {
@@ -387,10 +388,9 @@ transition-timing-function: var(--cubik-time);
 
 .main-section {
     background-color: var(--footer-bgcolor);
-    padding: 122px 0;
+    padding: 112px 0;
     text-align: center;
     max-width: 1440px;
-    height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(
         to right, 
@@ -411,7 +411,6 @@ transition-timing-function: var(--cubik-time);
 .main-section {
     min-width: 768px;
     max-width: 100%;
-    height: 436px;
     margin: auto;
     padding: 112px 0;
 }}
@@ -428,7 +427,6 @@ transition-timing-function: var(--cubik-time);
 @media screen and (min-width: 1200px){
 .main-section {
     width: 1440px;
-    height: 600px;
     margin: auto;
     padding: 188px 0;
 }
@@ -726,6 +724,7 @@ border: 0;
 
     .invisible-title {
         visibility: hidden;
+        display: none;
     }
 
 .bg-icon-about {
@@ -989,7 +988,7 @@ text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 190px;
         height: 100%;
         border: 1px solid #8E8F99;
         border-radius: 4px;
@@ -1090,6 +1089,7 @@ text-align: center;
         .footer-logo-text {
             margin-right: 120px;
             text-align: left;
+            margin-bottom: 0px;
         }}
 
 
